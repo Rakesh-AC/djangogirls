@@ -1,0 +1,25 @@
+version: 2.1
+
+jobs:
+  build:
+    working_directory: ~/circleci-python
+    docker:
+      - image: cimg/python:3.10.1
+    steps:
+      -checkout
+      -run:
+        name: create virtual environment
+        command: python -m venv girlsenv
+      -run:
+        name: activate veirual environment
+        command: . \girlsenv\bin\activate
+      -run:
+        name: install dependencies
+        command: pip install -r requirements.txt
+
+workflows:
+  build_and_test:
+    jobs:
+      - build
+      
+      
