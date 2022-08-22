@@ -1,25 +1,21 @@
 version: 2.1
-
 jobs:
-  build:
-    working_directory: ~/circleci-python
-    docker:
-      - image: cimg/python:3.10.1
+  build_deploy:
+    machine:
+      image: ubuntu-2004:202010-01
     steps:
-      -checkout
+      - checkout
       - run:
-        name: create virtual environment
-        command: python -m venv girlsenv
-      - run:
-        name: activate veirual environment
-        command: . \girlsenv\bin\activate
-      - run:
-        name: install dependencies
-        command: pip install -r requirements.txt
+          name: Installing AWS CLI
+          command: |
+            sudo apt-get update
+            sudo apt install python3-pip
+            sudo pip3 install awsebcli --upgrade
+      - run: cd ./app && npm install && npm run build
+      - run: aws s3 sync ./ s3://codex-server-bucket/ --request-payer requester
 
 workflows:
-  build_and_test:
+  version: 2
+  execute_bulk:
     jobs:
-      - build
-      
-      
+      - build_deploy
