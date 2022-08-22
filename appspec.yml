@@ -22,9 +22,6 @@ hooks:
     - location: scripts/migrate.sh
       timeout: 6000
       runas: ubuntu
-    - location: scripts/docker_run.sh
-      timeout: 6000
-      runas: ubuntu
     - location: scripts/gunicorn.sh
       timeout: 6000
       runas: ubuntu
