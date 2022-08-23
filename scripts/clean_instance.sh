@@ -1,2 +1,2 @@
 
-sudo rm -rf /home/ubuntu/codeX/*
+sudo rm -rf /home/ubuntu/myp/*
