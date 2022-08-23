@@ -89,7 +89,7 @@ commands:
                 description: codex-server-application
                 type: string
             bundle-bucket: 
-                description: codex-server-bucket
+                description: codex-server-s3bucket
                 type: string
             bundle-key: 
                 description: code
@@ -157,7 +157,7 @@ commands:
                 description: If you wish to pass any additional arguments to the aws deploy command
                 type: string
             bundle-bucket: 
-                description: codex-server-bucket
+                description: codex-server-s3bucket
                 type: string
             bundle-key: 
                 description: code
@@ -191,7 +191,7 @@ jobs:
                 description: If you wish to pass any additional arguments to the aws deploy command
                 type: string
             bundle-bucket:
-                description:  codex-server-bucket
+                description:  codex-server-s3bucket
                 type: string
             bundle-key: 
                 description:  code
@@ -256,7 +256,7 @@ workflows:
     jobs:
       - aws-code-deploy/deploy:
           application-name: codex-server-application
-          bundle-bucket: codex-server-bucket
-          bundle-key: code
+          bundle-bucket: codex-server-s3bucket
+          bundle-key: code/source
           deployment-group: CodexServerDeploymentGroup
           service-role-arn: arn:aws:iam::951813463780:role/CodexServerRoleForDeploy
