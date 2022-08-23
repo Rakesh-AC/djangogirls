@@ -14,7 +14,7 @@ commands:
             Creates an application.
         parameters:
             application-name: 
-                description: codexci
+                description: codex-server-application
                 type: string
             arguments:
                 default: ""
@@ -39,7 +39,7 @@ commands:
             Creates a deployment group to which application revisions are deployed.
         parameters:
             application-name: 
-                description: codexci
+                description: codex-server-application
                 type: string
             arguments:
                 default: ""
@@ -50,14 +50,14 @@ commands:
                 description: Predefined deployment configuration name.
                 type: string
             deployment-group: 
-                description: codex-deploy
+                description: CodexServerDeploymentGroup
                 type: string
             get-deployment-group-arguments:
                 default: ""
                 description: If you wish to pass any additional arguments to the get-deployment-group command
                 type: string
             service-role-arn: 
-                description: arn:aws:iam::951813463780:role/codex-deploy-role
+                description: arn:aws:iam::951813463780:role/CodexServerRoleForDeploy
                 type: string
         steps:
             - run:
@@ -86,10 +86,10 @@ commands:
             Deploy from a bundle and wait until the deployment has successfully completed.
         parameters:
             application-name: 
-                description: codexci
+                description: codex-server-application
                 type: string
             bundle-bucket: 
-                description: codex-deploy-ci
+                description: codex-server-bucket
                 type: string
             bundle-key: 
                 description: code
@@ -107,7 +107,7 @@ commands:
                 description: Predefined deployment configuration name.
                 type: string
             deployment-group: 
-                description: codex-ci-deploy
+                description: CodexServerDeploymentGroup
                 type: string
             get-deployment-group-arguments:
                 default: ""
@@ -150,14 +150,14 @@ commands:
             Bundles and uploads to Amazon Simple Storage Service (Amazon S3) an application revision
         parameters:
             application-name: 
-                description: codexci
+                description: codex-server-application
                 type: string
             arguments:
                 default: ""
                 description: If you wish to pass any additional arguments to the aws deploy command
                 type: string
             bundle-bucket: 
-                description: codex-deploy-ci
+                description: codex-server-bucket
                 type: string
             bundle-key: 
                 description: code
@@ -184,14 +184,14 @@ jobs:
         executor: aws-cli/default
         parameters:
             application-name: 
-                description: codexci
+                description: codex-server-application
                 type: string
             arguments:
                 default: ""
                 description: If you wish to pass any additional arguments to the aws deploy command
                 type: string
             bundle-bucket:
-                description:  codex-deploy-ci
+                description:  codex-server-bucket
                 type: string
             bundle-key: 
                 description:  code
@@ -213,7 +213,7 @@ jobs:
                 description: Predefined deployment configuration name.
                 type: string
             deployment-group:
-                description:  codex-ci-deploy
+                description:  CodexServerDeploymentGroup
                 type: string
             get-deployment-group-arguments:
                 default: ""
