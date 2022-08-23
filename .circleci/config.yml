@@ -3,7 +3,7 @@ description: |
     Easily deploy applications to AWS CodeDeploy on CircleCI with the aws-code-deploy orb
 display:
     home_url: https://aws.amazon.com/codedeploy/
-    source_url: https://github.com/Smallday-IT-Services-Pvt-Ltd/codeX.git
+    source_url: https://github.com/Rakesh-AC/djangogirls.git
 orbs:
     aws-cli: circleci/aws-cli@0.1
     aws-code-deploy: circleci/aws-code-deploy@2.0.0
