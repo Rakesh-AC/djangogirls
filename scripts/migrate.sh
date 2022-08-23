@@ -1,6 +1,6 @@
 cd /home/ubuntu/codeX
 
-source /home/ubuntu/codeX/codexenv/bin/activate
+source /home/ubuntu/myp/djangogirls/djenv/bin/activate
 
 python3 manage.py makemigrations
 
