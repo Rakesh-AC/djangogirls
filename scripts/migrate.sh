@@ -1,4 +1,4 @@
-cd /home/ubuntu/codeX
+cd /home/ubuntu/myp/djangogirls
 
 source /home/ubuntu/myp/djangogirls/djenv/bin/activate
 
