@@ -1,6 +1,6 @@
-cd /home/ubuntu/myp/djangogirls
+cd /home/ubuntu/djangogirls
 
-source /home/ubuntu/myp/djangogirls/djenv/bin/activate
+source /home/ubuntu/djangogirls/djenv/bin/activate
 
 python3 manage.py makemigrations
 
