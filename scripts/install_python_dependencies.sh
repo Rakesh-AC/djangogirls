@@ -1,6 +1,6 @@
 
-virtualenv /home/ubuntu/myp/djangogirls/djenv
-source /home/ubuntu/myp/djangogirls/djenv/bin/activate
-pip3 install -r /home/ubuntu/myp/djangogirls/requirements.txt
-touch /home/ubuntu/myp/djangogirls/.env
-cp /home/ubuntu/myp/djangogirls/.cirleci/env /home/ubuntu/myp/djangogirls/.env
+virtualenv /home/ubuntu/djangogirls/djenv
+source /home/ubuntu/djangogirls/djenv/bin/activate
+pip3 install -r /home/ubuntu/djangogirls/requirements.txt
+touch /home/ubuntu/djangogirls/.env
+cp /home/ubuntu/djangogirls/.cirleci/env /home/ubuntu/djangogirls/.env
