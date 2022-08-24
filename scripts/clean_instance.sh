@@ -1,2 +1,2 @@
 
-sudo rm -rf /home/ubuntu/myp/*
+sudo rm -rf /home/ubuntu/djangogirls/*
