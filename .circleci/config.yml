@@ -1,6 +1,6 @@
 version: 2.1
 description: |
-    Easily deploy applications to AWS CodeDeploy on CircleCI with the aws-code-deploy orb
+    Easily deploy applications to AWS CodeDeploy on CircleCI with the aws-code-deploy orb changing again
 
 orbs:
     aws-cli: circleci/aws-cli@0.1
