@@ -1,2 +1,2 @@
 
-sudo rm -rf /home/ubuntu/djangogirls/*
+sudo rm -rf /home/ubuntu/myproject/*
