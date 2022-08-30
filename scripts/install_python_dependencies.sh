@@ -1,12 +1,9 @@
 
-sudo -H pip3 install --upgrade pip
-
-sudo -H pip3 install virtualenv
-
 cd ~/myprojectdir
 virtualenv myprojectenv
 source myprojectenv/bin/activate
 pip install django gunicorn psycopg2-binary
+
 pip3 install -r /home/ubuntu/myprojectdir/requirements.txt
 
 ~/myprojectdir/manage.py makemigrations
