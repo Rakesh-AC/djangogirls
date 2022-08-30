@@ -2,5 +2,5 @@
 cd ~/myprojectdir
 source myprojectenv/bin/activate
 python3 manage.py collectstatic
-sudo systemctl start gunicorn
-sudo systemctl start nginx
+sudo systemctl restart gunicorn
+sudo systemctl restart nginx
