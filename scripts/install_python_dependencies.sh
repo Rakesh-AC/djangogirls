@@ -19,3 +19,5 @@ sudo ufw allow 8000
 
 cd ~/myprojectdir
 gunicorn --bind 0.0.0.0:8000 myproject.wsgi
+
+deactivate
