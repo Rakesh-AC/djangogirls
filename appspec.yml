@@ -23,7 +23,7 @@ hooks:
       timeout: 300
       runas: ubuntu
     - location: scripts/ngnix.sh
-      timeout: 300
+      timeout: 600
       runas: ubuntu
   ApplicationStart:
     - location: scripts/start_application.sh
