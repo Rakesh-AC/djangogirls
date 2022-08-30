@@ -10,4 +10,3 @@ sudo systemctl restart nginx
 
 sudo ufw delete allow 8000
 
-sudo ufw allow 'Nginx Full'
