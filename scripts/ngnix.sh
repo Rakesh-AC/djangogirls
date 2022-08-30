@@ -1,7 +1,7 @@
 
 touch /etc/nginx/sites-available/djangogirls
 
-sudo cp /home/ubuntu/myprojectdir/nginx/djangogirls.conf /etc/nginx/sites-available/djangogirls
+sudo cp /home/ubuntu/myprojectdir/nginx/codex.conf /etc/nginx/sites-available/djangogirls
 
 sudo ln -s /etc/nginx/sites-available/myprojectdir /etc/nginx/sites-enabled
 
