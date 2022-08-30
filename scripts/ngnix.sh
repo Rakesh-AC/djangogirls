@@ -1,5 +1,5 @@
 
-sudo vim /etc/nginx/sites-available/djangogirls
+touch /etc/nginx/sites-available/djangogirls
 
 sudo cp /home/ubuntu/myprojectdir/nginx/djangogirls.conf /etc/nginx/sites-available/djangogirls
 
