@@ -1,4 +1,3 @@
-
 sudo vim /etc/nginx/sites-available/djangogirls
 
 sudo cp /home/ubuntu/myprojectdir/nginx/codex.conf /etc/nginx/sites-available/djangogirls
