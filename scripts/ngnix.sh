@@ -5,9 +5,9 @@ sudo cp /home/ubuntu/myprojectdir/nginx/djangogirls.conf /etc/nginx/sites-availa
 
 sudo ln -s /etc/nginx/sites-available/myprojectdir /etc/nginx/sites-enabled
 
-sudo rm -rf /etc/nginx/sites-available/default.conf
+sudo rm -rf /etc/nginx/sites-available/default
 
-sudo rm -rf /etc/nginx/sites-enabled/default.conf
+sudo rm -rf /etc/nginx/sites-enabled/default
 
 sudo systemctl restart nginx
 
