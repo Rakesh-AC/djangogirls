@@ -7,6 +7,8 @@ sudo ln -s /etc/nginx/sites-available/myprojectdir /etc/nginx/sites-enabled
 
 sudo rm -rf /etc/nginx/sites-available/default.conf
 
+sudo rm -rf /etc/nginx/sites-enabled/default.conf
+
 sudo systemctl restart nginx
 
 
