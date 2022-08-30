@@ -1,4 +1,4 @@
-touch /etc/nginx/sites-available/djangogirls
+sudo vim /etc/nginx/sites-available/djangogirls
 
 sudo cp /home/ubuntu/myprojectdir/nginx/codex.conf /etc/nginx/sites-available/djangogirls
 
@@ -8,5 +8,4 @@ sudo rm -rf /etc/nginx/sites-available/default.conf
 
 sudo systemctl restart nginx
 
-sudo ufw delete allow 8000
 
